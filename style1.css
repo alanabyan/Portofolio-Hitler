@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+ 
+ html {
+    scroll-behavior: smooth;
+ }
+
+ body {
+    margin: auto;
+    padding: 0;
+    font-family: Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    background-color: #3586ff;
+    overflow: auto;
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: 400;
+    padding: 5px;
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0,5px;
+    color: black;
+    padding: 0 10px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    background-color: #fff;
+    bottom: -10px;
+    transition: 0,5s;
+}
+
+a:hover {
+    color: #fff;
+ } 
+
+ a:hover::after {
+    width: 100%;
+ }
+
+.content {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+    padding: 1px;
+    width: 50px;
+    list-style-image: none;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    
+}
+
+.foto {
+    position: relative;
+    display: flex;
+    border-radius: 15%;
+    width: 50%;
+    margin: 10px;
+    justify-content: center;
+    
+}
+
+.foto1 {
+    display: flex;
+    width: 35%;
+}
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    padding: 1rem;
+}
+
+.tulis {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: left;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: #3586ff;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+    animation: goyang 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 300px;
+}
+
+.wave#wave2 {
+    z-index: 1000;
+    opacity: 0.5;
+    background-position-x: 400px;
+}
+
+.wave#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave#wave4 {
+    z-index: 998;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+/* section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    animation: goyang 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: goyang2 15s linear infinite;
+    z-index: 999;
+    opacity: 0,5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: goyang3 30s linear infinite;
+    z-index: 998;
+    opacity: 0,2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4 {
+    animation: goyang4 15s linear infinite;
+    z-index: 997;
+    opacity: 0,7;
+    animation-delay: -2s;
+    bottom: 20px;
+} */
+
+
+
+@keyframes goyang {
+    0%,100% 
+    {
+        transform: translateY(0px);
+    }
+    50% 
+    {
+        transform: translateY(10px);
+    }
+}
+
+/* @keyframes goyang2 {
+    0% 
+    {
+        background-position-x: 0;
+    }
+    100% 
+    {
+        background-position-x:-1000px;
+    }
+} */
+
+
+
+#AboutMe {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nazi {
+    font-size: 15px;
+}
+
+
+
+ .profile-card {
+    background: url(jerman.jpg); 
+     font:18px "Nunito";
+    background-size: cover;
+   
+    min-height: 100vh;
+    padding: 2rem;
+    color: black;
+    /* z-index: -1;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;  */
+
+     
+    
+}
+
+
+.profile-card_img {
+    background: url(kaca.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundZoomAnimate 4s forwards;
+    box-shadow: 0px 18px 200px -60px black;
+    width: 450px;
+    position: relative;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border:2px solid #ffffff40;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+ } 
+
+ /* @keyframes backgroundZoomAnimate {
+    to {
+        transform: scale(1.1);
+    }
+}   */
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+ footer {
+    background:url(ptir.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: green;
+ }
+
+ h1 {
+    font-size: 50px;
+    font-weight: 400;
+ }
+
+ .hitler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 250;
+ }
+
+.rarity {
+    font-size: 30px;
+    font-weight: 500;
+}
